@@ -14,6 +14,11 @@ arg = sys.argv[1:]
 for x in arg:
     my_list.append(x)
 
+if(len(my_list) != 3):
+    print('Wrong argument passed')
+    print('python Calculator.py 12 11 52')
+    sys.exit()
+
 firstNoLastDigit  = int(my_list[0]) % 10
 secondNoLastDigit = int(my_list[1]) % 10
 thirdNoLastDigit  = int(my_list[2]) % 10
